@@ -1,0 +1,156 @@
+#root {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 50px;
+}
+
+.door_div,
+.temp_div>div,
+.vid_div,
+.chart_div {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+  background-color: #d6e7f5;
+  border-radius: 15px;
+}
+
+.door_div,
+.temp_div,
+.vid_div,
+.chart_div {
+  text-align: center
+}
+
+.temp_div {
+  display: flex;
+  gap: 25px;
+  justify-content: space-around;
+}
+
+.temp_div>div {
+  flex: 1;
+}
+
+.vid_div {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.vid_div p {
+  width: 100%;
+}
+
+.vid_div img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+}
+
+.chart_div {
+  height: 600px;
+}
+
+.chart-container {
+  width: 100%;
+  height: calc(100% - 50px);
+  position: relative;
+}
+
+.chart-buttons {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.chart-buttons img {
+  display: block;
+}
+
+.title,
+button {
+  background-color: #4A5568;
+  border-radius: 13px 13px 0 0;
+  padding: 12px 0;
+  margin: 0;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  padding: 1.5rem;
+  color: #2D3748;
+}
+
+.time_div {
+  color: rgb(143, 143, 143);
+  margin: 1rem 0 0;
+  font-size: 0.65rem;
+}
+
+button {
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2D3748;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+input {
+  border: 2px solid #2D3748;
+  border-radius: 5px;
+  outline: none;
+  padding: 0px 5px;
+  transition: 0.3s;
+}
+
+input:hover {
+  background-color: #e4e4e4;
+}
+
+@media only screen and (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+    gap: 15px;
+  }
+
+  h1 {
+    padding: 1rem;
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #root {
+    padding: 0.75rem;
+    gap: 10px;
+  }
+
+  h1 {
+    padding: 0.5rem;
+    font-size: 2.25rem;
+  }
+}

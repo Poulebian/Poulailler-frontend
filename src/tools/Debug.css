@@ -1,0 +1,15 @@
+.debug_div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  padding: 0.5rem;
+}
+
+.debug_div p {
+  margin: 0;
+}
+
+.debug_div input {
+  width: 80px;
+}
